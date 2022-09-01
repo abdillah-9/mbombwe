@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="KIUTmainpage.css"/>
+        <link rel="stylesheet" href="dropdownANDscrolling.css"/>
+        <link rel="stylesheet" href="slideshow.css"/>
+        <link rel="stylesheet" href="fontawsome/css/all.css"/>
+        <title>KIUT WEBSITE</title>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="refresh" content="10000000"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <style></style>
+    </head>
+    <body>
+      <!--First Div---Heading-->
+        <div id="top" class="divP1">
+          <div class="divP1C1">KAMPALA INTERNATIONAL UNIVERSITY<br/>
+          <span>Explore the heights</span></div>
+          <div class="divP1C2">
+              <div class="divP1C2M1"><img src="images.jpeg"/></div>
+              <div class="divP1C2M2">KIUT University</div>
+          </div>
+      </div>
+        <!--Second div-->
+        <div class="divP2">
+          <div class="divP2_icon_1">
+               <i onclick="myFunc()" class="fas fa-bars divP2C1"></i>
+               <div id="myDropdown" class="divP2C2">
+                   <a class="divP2C2M1" href="#">Home</a>
+                   <a class="divP2C2M1" href="#">About KIUT</a>
+                   <a class="divP2C2M1" href="#">Academic Units</a>
+                   <a class="divP2C2M1" href="#">Compus Life</a>
+                   <a class="divP2C2M1" href="#">Alumni</a>
+                   <a class="divP2C2M1" href="#">IT Services</a>
+               </div>
+          </div>
+          <a href="#" class="fas fa-refresh divP2_icon_2" title="Refresh"></a>
+          <a href="#apply" class="fas fa-university divP2_icon_4" title="Go to apply button"></a>
+          <a href="#bottom" class="fas fa-arrow-circle-down divP2_icon_3" title="Go to the bottom"></a>
+        </div>
+        <!--Third Div-->
+        <div class="divP3">
+                <!--Container of the slideshow-->
+                  <!--First Slideshow-->
+        <div class="slideshow-container" data-cycle="3000">
+          <div class="mySlides fade">
+              <div class="numbertext">1/5</div>
+              <img src="img_snow_wide.jpg"/>
+              <div class="text">Lights img_mountains_wide</div>
+          </div>
+
+          <div class="mySlides fade">
+              <div class="numbertext">2/5</div>
+              <img src="img_lights_wide.jpg"/>
+              <div class="text">img_mountains_wide</div>
+          </div>
+
+          <div class="mySlides fade">
+              <div class="numbertext">3/5</div>
+              <img src="img_mountains_wide.jpg"/>
+              <div class="text">img_nature_wide</div>
+          </div>
+          <div class="mySlides fade">
+              <div class="numbertext">4/5</div>
+              <img src="img_snow_wide.jpg"/>
+              <div class="text">img_snow_wide</div>
+          </div>
+          <div class="mySlides fade">
+              <div class="numbertext">5/5</div>
+              <img src="img_nature_wide.jpg"/>
+              <div class="text">img_mountains_wide</div>
+          </div>
+      </div>
+      <!--DOTS BELOW THE SLIDESHOW-->
+      <span class="dot" onclick="currentSlide()"></span> 
+      <span class="dot" onclick="currentSlide()"></span>
+      <span class="dot" onclick="currentSlide()"></span>
+      <span class="dot" onclick="currentSlide()"></span>
+      <span class="dot" onclick="currentSlide()"></span>
+        </div>
+        <div class="divP4">
+          <h3>FIND PROGRAMME</h3>
+          <!--First input field for selecting a programme type-->
+          <form action="" method="post">
+            <select name="" class="divP4C1">-Program type-
+             <option value="Undergraduate">Undergraduate</option>
+             <option value="Postgraduate">Postgraduate</option>
+             <option value="Non Degree">Non Degree</option>
+          </select>
+          <!--Second selecting field for field of study-->
+          <select name="" class="divP4C1">
+            <option value="Information Technology">Information Technology</option>
+            <option value="Education">Education</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Natural Sciences">Natural Sciences</option>
+            <option value="Applied Sciences">Applied Sciences</option>
+            <option value="Social Scieences">Social Sciences</option>
+            <option value="Arts">Arts</option>
+            <option value="Laws">Laws</option>
+            <option value="Commerce">Commerce</option>
+          </select>
+          <!--Third input area-->
+          <input type="search" name="" class="divP4C4" placeholder="Find by programme name"></input>
+          <!--Submit the form-->
+          <input type="submit" name="submit" value="Find Programme" class="divP4C2"/>
+          </form>
+          <a href="#" class="divP4C3"><i class=" fas fa-book"></i>Course catalogue</a>
+          <a href="#" class="divP4C3"><i class=" fas fa-info-circle"></i>Facts & Figures</a>
+          <a href="#" class="divP4C3"><i class=" fas fa-globe"></i>International Students</a>
+          <a href="#" class="divP4C3"><i class=" fas fa-user-graduate"></i>Student's Corner</a>
+          <a href="#" class="divP4C3"><i class=" fas fa-users"></i>Staff's Corner</a> 
+        </div>
+        <div class="divP5">
+          <h3 class="divP5C1"><i class="far fa-calendar-alt"></i>Recent Events</h3>
+          <!--First Event-->
+          <div class="divP5C2">
+            <div class="divP5C2M1">01<br/>AUG<br/>2022</div> <a href="#" class="divP5C2M2">First event</a>
+          </div>
+          <!--Second Event-->
+          <div class="divP5C2">
+            <div class="divP5C2M1">23<br/>NOV<br/>2022</div> <a href="#" class="divP5C2M2">Second event</a>
+          </div>
+          <!--Third event-->
+          <div class="divP5C2">
+            <div class="divP5C2M1">20<br/>OCT<br/>2022</div> <a href="#" class="divP5C2M2">Third event</a>
+          </div>
+          <!--Link to all events-->
+          <a href="#" class="divP5C2">View all events</a>
+        </div>
+        <div class="divP6">
+          <h3 class="divP6C1"><i class="fas fa-bullhorn"></i>Announcements</h3>
+          <!--First Announcement-->
+          <div class="divP6C2"><span class="divP6C2M1">NEW!</span> <a href="#">content link</a>
+            <br/> <i class="fas fa-calendar-alt divP6C2M2"></i> <span style="color: black;">26.07.2022</span>
+                  <i class="fas fa-clock divP6C2M3"></i> <span style="color: black;">12.15.06</span>
+          </div>
+          <!--Second Announcement-->
+          <div class="divP6C2"><span class="divP6C2M1">NEW!</span> <a href="#">content link</a>
+            <br/> <i class="fas fa-calendar-alt divP6C2M2"></i> <span style="color: black;">26.07.2022</span>
+                  <i class="fas fa-clock divP6C2M3"></i> <span style="color: black;">12.15.06</span>
+          </div>
+          <!--Third Announcement-->
+          <div class="divP6C2"><span class="divP6C2M1">NEW!</span> <a href="#">content link</a>
+            <br/> <i class="fas fa-calendar-alt divP6C2M2"></i> <span style="color: black;">26.07.2022</span>
+                  <i class="fas fa-clock divP6C2M3"></i> <span style="color: black;">12.15.06</span>
+          </div>
+          <!--Link to all announcements-->
+          <a href="#" class="divP6C3">View All Announcements</a>
+        </div>
+        <div id="apply" class="divP7">
+          <div class="divP7C1"><span>Welcome</span></div>
+          <div class="divP7C2">
+            <p class="divP7C2M1 reveal social">
+            We are delighted that you have decided to undertake your tertiary studies
+            at the Kampala International University or are concidered to do so.
+            This website describe the range of our courses and different activities
+            done at the University which will give you a flavor of life in our 
+            various compuses.
+            </p>
+            <a href="#" class="divP7C2M2">Read More</a>
+            <a href="#" class="divP7C2M3">Apply Here</a>
+          </div>
+        </div>
+        <div class="divP8">
+          <div class="divP8C1"><i class=" fas fa-newspaper"></i>Trending KIUT News</div>
+          <div class="divP8C2">
+            <!--Second Slideshow-->
+        <div class="slideshow-container" data-cycle="3000">
+          <div class="mySlides fade">
+              <div class="numbertext">1/5</div>
+              <img class="imageSlideshow2" src="img_mountains_wide.jpg"/>
+              <div class="text">Lights img_mountains_wide</div>
+          </div>
+
+          <div class="mySlides fade">
+              <div class="numbertext">2/5</div>
+              <img class="imageSlideshow2" src="img_nature_wide.jpg"/>
+              <div class="text">img_mountains_wide</div>
+          </div>
+
+          <div class="mySlides fade">
+              <div class="numbertext">3/5</div>
+              <img class="imageSlideshow2" src="img_snow_wide.jpg"/>
+              <div class="text">img_nature_wide</div>
+          </div>
+          <div class="mySlides fade">
+              <div class="numbertext">4/5</div>
+              <img class="imageSlideshow2" src="img_lights_wide.jpg"/>
+              <div class="text">img_snow_wide</div>
+          </div>
+          <div class="mySlides fade">
+              <div class="numbertext">5/5</div>
+              <img class="imageSlideshow2" src="img_nature_wide.jpg"/>
+              <div class="text">img_mountains_wide</div>
+          </div>
+      </div>
+      <!--DOTS BELOW THE SLIDESHOW-->
+      <span class="dot" onclick="currentSlide()"></span> 
+      <span class="dot" onclick="currentSlide()"></span>
+      <span class="dot" onclick="currentSlide()"></span>
+      <span class="dot" onclick="currentSlide()"></span>
+      <span class="dot" onclick="currentSlide()"></span>        
+          </div>
+        </div>
+        <div class="divP9">
+          <i class="fas fa-building divP9C1"></i> <h3 class="divP9C2">Compus life</h3>
+          <div class="divP9C3">
+            <i class="fas fa-book divP9C3M1"></i> <span>Complaint Registration</span><br/><br/>
+            <i class="fas fa-baseball divP9C3M1"></i> <span>Clubs & Social</span><br/><br/>
+            <i class="fas fa-desktop divP9C3M1"></i> <span>ICT Services</span><br/>
+          </div>
+        </div>
+        <div class="divP10">
+          <div class="divP10C1">
+            <img src="img_lights_wide.jpg" class="divP10C1M1"/>
+            <h3 style="color: green;">UNDERGRADUATES</h3>
+            <p class="reveal graduates">The Kampala International University offers various academic programmes
+              leading to the awards of Certificates, Diplomas and Degrees.
+            </p>
+          </div>
+          <div class="divP10C1">
+            <img src="img_snow_wide.jpg" class="divP10C1M1"/>
+            <h3 style="color: green;">POSTGRADUATES</h3>
+            <p class="reveal graduates">The Kampala International University offers various
+               academic programmes
+              leading to the awards of Postgraduate diploma,Masters & PHD degrees.
+            </p>
+          </div>
+          <div class="divP10C1">
+            <img src="img_mountains_wide.jpg" class="divP10C1M1"/>
+            <h3 style="color: green;">INTERNATIONAL STUDENTS</h3>
+            <p class="reveal graduates">Kampala International University values the 
+              presence of International students and scholers and recognizes their valuability
+               in our University growth.</p>
+          </div>
+        </div>
+        <div class="divP11">
+          <div class="divP11C1">
+            <i class="fas fa-graduation-cap"></i> <h5 style="display: inline-block;">Alumni Of The Semister</h5>
+          </div>
+          <div class="divP11C2">
+           <div class="divP11C2M2"> 
+            <img src="img_nature_wide.jpg" class="divP11C2M1"/>
+            <h4>Dr Mboni</h4>
+           </div> 
+            <div class="divP11C2M3">
+              <div class="reveal alumnis">aaaaaaaaaaa aaaaaaaa aaaaaaaa aaaaa aaaaaa aaaaaaaaa
+              aaaaa aaaaaa aaaaaaa aaa aaaaaaaa aaa a aaaaaaaaaaa aaaa
+               aaa aaaaaa aaaaaaaaaaaaaa a aaa aaaaaa aaaa aaaa a aaaaaa
+               aaaaaaaaaaa aaaaaaaa aaaaaaaa aaaaa aaaaaa aaaaaaaaa
+               aaaaa aaaaaa aaaaaaa aaa aaaaaaaa aaa a aaaaaaaaaaa aaaa
+                aaa aaaaaa aaaaaaaaaaaaaa a aaa aaaaaa aaaa aaaa a aaaa</div>
+               <a href="#" class="divP11C2M4">Read More &#10095;&#10095;</a>
+            </div>
+          </div>
+          <div class="divP11C2">
+          <div class="divP11C2M2"> 
+            <img src="img_mountains_wide.jpg" class="divP11C2M1"/>
+            <h4>Dr Mboni</h4>
+            </div>
+            <div class="divP11C2M3">
+              <div class=" reveal alumnis">aaaaaaaa aaaaaaa aaaaaa aaaaa aa aaaaa aaaa aaaaaaa aaa
+              aaaa aaaaa aaaaaaa aaa aaaaaaaa aaa aaaaaaaaa aaaa aa aaa
+              aaaaaaaaaaa aaaaaaaa aaaaaaaa aaaaa aaaaaa aaaaaaaaa
+              aaaaa aaaaaa aaaaaaa aaa aaaaaaaa aaa a aaaaaaaaaaa aaaa
+               aaa aaaaaa aaaaaaaaaaaaaa a aaa aaaaaa aaaa aaaa a aaaaaa
+               aaaaaaaaaaa aaaaaaaa aaaaaaaa aaaaa aaaaaa aaaaaaaaa</div>
+               <a href="#" class="divP11C2M4">Read More &#10095;&#10095;</a>
+            </div>
+          </div>      
+        </div>
+        <div class="divP12 ">
+          <div class="divP12C1 reveal social">
+            <h3>UNIVERSITY</h3>
+            <a href="#">Admission</a><br/>
+            <a href="#">ARIS</a><br/>
+            <a href="#">Webmail</a><br/>
+            <a href="#">Learning Management System</a>
+          </div>
+          <div class="divP12C1 reveal social">
+            <h3><i class="far fa-thumbs-up divP12C1M2"></i>SOCIAL MEDIA</h3>
+            <i class="fab fa-facebook-messenger divP12C1M1"></i><a href="#">Facebook</a><br/><br/>
+            <i class="fab fa-twitter divP12C1M1"></i><a href="#">Twitter</a><br/><br/>
+            <i class="fab fa-youtube divP12C1M1"></i><a href="#">Youtube</a><br/><br/>
+            <i style="font-size: 22px;" class="fab fa-instagram divP12C1M1"></i><a href="#">Instagram</a>
+          </div>
+          <div class="divP12C1 reveal social">
+            <h3>CONTACTS</h3>
+            <p>Kampala International University</p>
+            <p>Julius K. Nyerere RD,</p>
+            <p>P.O.Box 9790</p>
+            <p>Dar es salaam</p><br/>
+            <i class="fas fa-address-card divP12C1M1"></i><span>Email: info@kiut.ac.tz</span>
+          </div>
+        </div>
+        <div id="bottom" class="divP13">
+          <div class="divP13C1">
+            <i class="far fa-copyright"></i> <span>2022/2023 Kampala International University</span><br/>
+             <span>Term Of Use/Privacy Policy</span>
+          </div>
+          <div class="divP13C2">
+            <a class="fas fa-arrow-circle-up divP13C2M1" href="#top"></a>
+          </div>
+        </div>
+        <!--MY JS SCRIPTS-->
+        <script src="slideshow.js"></script>
+        <script src="dropdown.js"></script>
+        <script src="scrollanim.js"></script>
+    </body>
+</html>

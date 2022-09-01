@@ -1,0 +1,69 @@
+*{box-sizing: border-box;text-decoration: none;}
+.divP2{
+    width: 100%;height: auto;padding: 5px 2px;background-color: rgba(0,70,0,1);
+}
+.divP2C1{
+    color: white;cursor: pointer;
+}
+.divP2_icon_1{
+    display: inline-block;font-size: 20px;color: white;
+}
+.divP2_icon_2{
+    color: white;cursor: pointer;display:inline-block;position: absolute;left: 20%;
+    font-size: 20px;
+}
+.divP2_icon_2:hover{
+    animation-name: refreshing;animation-duration: 2s;animation-iteration-count: infinite;
+}
+@keyframes refreshing{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.divP2_icon_3{
+    color: white;cursor: pointer;display:inline-block;position: absolute;left: 85%;
+    font-size: 25px;
+}
+.divP2_icon_4{
+    color: white;cursor: pointer;display: inline-block;position: absolute;left: 60%;
+    font-size: 20px;
+}
+.divP2C2{
+    width: auto;height: auto;background-color: rgb(220,220,220);display: none;
+    border-radius: 5px;box-shadow: 0px 1px 3px 3px rgb(0,0,0,0.2);z-index: 1;position: absolute;
+}
+.divP2C2M1{
+    color: green;text-align: center;display:block;border-bottom: 1px solid green;
+    padding: 7px;font-size: 15px;
+}
+.divP2C2M1:hover,.divP2C2M1:focus{
+    background-color: rgba(180,180,180,1);
+}
+.showdivP2C2{display: block;}
+/* BELOW IS THE STYLING OF SCROLL ANIMATIONS */ 
+.reveal{
+    opacity: 0;position: relative;
+}
+.reveal.active{
+    opacity: 1;
+}
+.active.graduates{
+    animation: scrolling 1s ease-in;background-color: rgba(240, 240, 240, 1);
+}
+@keyframes scrolling{
+    from{transform: translateX(-70px);opacity: 0;}
+    to{transform: translateX(0px);opacity: 1;}
+}
+.active.social{
+    animation: notes 1s ease-in;background-color: green;
+}
+@keyframes notes{
+    from{transform: translateY(100px);opacity: 0;}
+    to{transform: translateY(0px);opacity: 1;}
+}
+.active.alumnis{
+  animation: alu 1s ease-in;background-color: white;
+}
+@keyframes alu{
+    from{transform: translateX(70px);opacity: 0;}
+    to{transform: translateX(0px);opacity: 1;}
+}
